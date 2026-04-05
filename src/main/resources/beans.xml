@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义 GreetingService Bean -->
+<!--    <bean id="greetingService" class="com.example.service.GreetingService"/>-->
+<!--    <bean id="address" class="com.example.Address">-->
+<!--        <property name="city" value="Beijing"/>-->
+<!--    </bean>-->
+        <bean id="address" class="com.example.Address">
+            <property name="city" value="beijing"/>
+        </bean>
+    <bean id="student" class="com.example.Student">
+        <property name="name" value="zhangsan"/>
+        <property name="address" ref="address"/>
+    </bean>
+
+</beans>
