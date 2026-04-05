@@ -1,0 +1,70 @@
+[33mcommit ffb46136c6c5a4209685b2331116adefff9aa56f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:50:42 2026 +0800
+
+    chore(ide): 配置IDE数据源和编码设置
+    
+    - 添加MySQL数据库连接配置
+    - 设置项目文件编码为UTF-8
+    - 配置SQL语言注入规则支持多种数据库框架
+    - 添加数据库查询工具的语言注入支持
+    - 配置项目工作目录和JDBC驱动设置
+
+[33mcommit 81506479acdfbc3ca0f8c80d13cbe64aceb6f0c0[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:42:32 2026 +0800
+
+    feat(core): 添加Spring框架集成的主程序入口
+    
+    - 集成Spring ApplicationContext上下文管理
+    - 实现ClassPathXmlApplicationContext配置加载
+    - 添加Address实体Bean获取与城市信息输出
+    - 添加Student实体Bean获取与个人信息展示
+    - 实现依赖注入对象的属性访问功能
+    - 创建完整的控制台输出展示流程
+
+[33mcommit 768cea42852ed47533139bc413d8c790aa33109c[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:42:20 2026 +0800
+
+    feat(student): 添加学生实体类
+    
+    - 创建Student类包含姓名和地址属性
+    - 实现getter和setter方法
+    - 添加displayInfo方法用于显示学生信息
+    - 集成Address类作为学生地址信息
+    - 完善基本的学生数据结构定义
+
+[33mcommit 31fba4edbf9cd1db19ff180172e8bf1f83df22d9[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:42:03 2026 +0800
+
+    feat(address): 添加地址实体类
+    
+    - 创建了 Address 类用于存储地址信息
+    - 实现了城市字段的 getter 和 setter 方法
+    - 定义了基本的地址数据结构
+
+[33mcommit 7447f081fbb16744211728ac6615496ca78231ee[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:41:47 2026 +0800
+
+    feat(project): 初始化Spring项目配置
+    
+    - 添加Spring beans配置文件定义GreetingService、Address和Student Bean
+    - 配置Maven项目依赖spring-context 6.2.11版本
+    - 设置Java 25编译环境和UTF-8编码
+    - 配置IDEA项目设置包括外部存储、Maven项目管理和JDK版本
+    - 添加代码检查配置文件和Git版本控制映射
+
+[33mcommit 6f2ff75560e61b8c217f6cb2a9da6ad637da21dd[m
+Author: chen <zixinxiaohong1@outlook.com>
+Date:   Sun Apr 5 13:25:43 2026 +0800
+
+    chore(project): 添加项目配置文件和忽略规则
+    
+    - 配置 .idea 目录下的 IDE 相关忽略文件
+    - 设置 Maven 和构建工具的目标目录忽略规则
+    - 添加多种开发环境 (IntelliJ IDEA, Eclipse, NetBeans, VS Code) 的忽略配置
+    - 包含操作系统特定文件 (Mac OS .DS_Store) 的忽略规则
+    - 配置数据源和工作空间相关临时文件的忽略规则
